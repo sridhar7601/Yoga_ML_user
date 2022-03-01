@@ -1,0 +1,143 @@
+#video {
+  display: none;
+  transform: scaleX(-1);
+}
+
+#body{
+  background: #3a7bd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#right_canvas{
+max-width: 50vw;
+max-height: 90vh;
+justify-content: center;
+/* left: 20px; */
+}
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    /* flex-direction:row-reverse; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+      padding:17px;
+    margin: 30px auto;
+    justify-content: space-around;
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    background-color: #b2d0df;
+  /* box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.25), -5px -5px 5px 5px rgba(0,0,0,0.22); */
+    /* cursor: pointer; */
+    transition: 0.3s;
+  }
+.fill{
+right: 20px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+  .card .fill {
+    font-size: 17px;
+    /* font-weight: 100; */
+    height: 50px;
+    font-family: "Nunito", sans-serif;
+    width: 200px;
+    letter-spacing: 1px;
+    padding: 1px 30px 7px;
+    outline: 0;
+    border: 0px solid black;
+    /* cursor: pointer; */
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  /* .card .fill::after {
+    content: "";
+     background-color: rgb(151, 140, 216); 
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+     transition: 0.0s; 
+  } */
+  
+  .fill:hover::after {
+    top: 0px;
+    left: 0px;
+  }
+  /* End of Fill Button  */
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 30px;
+    padding-right: 40px;
+    padding-top: 50px;
+    object-fit: cover;
+  }
+  .title{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 60px;
+  }
+  .card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+    /* font-weight: bold; */
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+  }
+  
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white {
+    color: white;
+  }
+  
+  .title-black {
+    color: black;
+  }
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+  
+  
+  /*
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    transition: 0.4s;
+  }
+  */
