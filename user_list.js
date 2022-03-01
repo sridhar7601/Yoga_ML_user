@@ -49,8 +49,8 @@ function clicked(e,label){
         localStorage.setItem("id",e);
        
         console.log("this is fr local",e)
-        location.href = "/user_demo.html"
-        // window.location = "user_demo.html"
+        //location.href = "/user_demo.html"
+        window.location = "user_demo.html"
     }; 
     button.classList.add("fill")
     button.id = e;
