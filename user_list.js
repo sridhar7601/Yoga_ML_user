@@ -50,7 +50,7 @@ function clicked(e,label){
        
         console.log("this is fr local",e)
         //location.href = "/user_demo.html"
-        window.location = "user_demo.html"
+        window.location = "https://sridhar7601.github.io/Yoga_ML_user/user_demo.html"
     }; 
     button.classList.add("fill")
     button.id = e;
