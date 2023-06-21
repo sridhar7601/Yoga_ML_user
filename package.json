@@ -7,7 +7,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^2.7.2"
+    "vite": "^2.9.16"
   },
   "dependencies": {
     "@mediapipe/pose": "^0.5.1635988162",
